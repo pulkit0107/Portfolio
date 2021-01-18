@@ -7,24 +7,72 @@
     <title>Pulkit Jain Front-End Web Developer</title>
     <link rel="icon" href="img/icon_p-512.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-       
-    <nav class="navbar navbar-default" id="my-navigation">
+    
+    <!--navigation starts-->
+    <nav class="navbar navbar-default" >
         <div class="navbar-header">
             <h1>Pulkit Jain</h1>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="active"><a href="#">About Us</a></li>
-            <li class="active"><a href="#">Projects</a></li>
-            <li class="active"><a href="#">Contact Us</a></li>
+        <div class="nav-link"></div>
+        <ul >
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#">About Us</a></li>
+            <li ><a href="#">Projects</a></li>
+            <li ><a href="#">Contact Us</a></li>
         </ul>   
     </nav>
 
-    <div class="section-4">
+    <!--Work starts-->
+    <div class="work fix-width clearfix">
+        <h1>Latest work</h1><hr class="my-hr">
+        <div class="work-link">
+            <a href="#">
+                <img src="img/img1.png" alt="" width="80%">
+            </a>
+        </div>
+        <div class="work-link">
+            <a href="#">
+                <img src="img/img2.png" alt="" width="80%">
+            </a>
+        </div>
+        <div class="work-link">
+            <a href="#">
+                <img src="img/img3.png" alt="" width="80%">
+            </a>
+        </div>
+        <div class="work-link">
+            <a href="#">
+                <img src="img/img4.png" alt="" width="80%">
+            </a>
+        </div>
+    </div>
+
+    <!--Skills starts-->
+    <div class="skill full-width clearfix">
+        <div class="fix-width">
+            <div class="skill-header">
+                <h1>Skills</h1><hr class="my-hr">
+            </div>
+            <div class="skilltype">
+                <h1>Front end</h1>
+                <h2>HTML</h2>
+                <progress value="80" max="100"></progress>
+                <h2>CSS</h2>
+                <progress value="75" max="100"></progress>
+                <h2>Bootstrap</h2>
+                <progress value="75" max="100"></progress>
+                <h2>Javascript</h2>
+                <progress value="50" max="100"></progress>
+            </div>  
+        </div>
+    </div>
+
+
+    <!--Form starts-->
+    <div class="section-4 full-width">
         <form action="#">
             <h1>Simply fill out the form and we'll be in<br> touch with you soon!</h1>
             <input type="text" autocomplete="on" placeholder="Name*" required ><hr><br>
@@ -35,16 +83,18 @@
         </form>
     </div>
 
+ 
 
     <!--footer starts-->
-
-    <div class="footer-box">
-        <div class="footer text-center">
-          <a href="#"><span class="fa fa-linkedin-square"></span></a>
-          <a href="#"><span class="fa fa-github-square"></span></a>
-          <p>Copyright © 2021, Pulkit Jain. All rights reserved.</p>
+    <div class="footer full-width">
+        <div class="fix-width">
+            <a href="https://www.linkedin.com/in/pulkit-jain-a13181154/"><span class="fa fa-linkedin-square"></span></a>
+            <a href="https://github.com/pulkit0107"><span class="fa fa-github-square"></span></a>
+            <div class="footer-copyright">
+                <p>Copyright © 2021, Pulkit Jain. All rights reserved.</p>
+            </div>
         </div>
-      </div>
+    <footer>
 
 
 
@@ -54,8 +104,6 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>    
     <script src="js/script.js"></script>
 </body>
 </html>
