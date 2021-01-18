@@ -1,0 +1,101 @@
+
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#my-navigation{
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+#my-navigation .navbar-header{
+    float: none;
+}
+
+#my-navigation .navbar-right{
+    float: left;
+}
+
+#my-navigation ul li a{
+    color: #fff;
+}
+
+
+
+
+
+/*form fill section*/
+
+.section-4{
+    background-image: url(../img/pic.jpg);
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.section-4 h1{
+    color: #fff;
+}
+
+.section-4 input{
+    background-color:transparent;
+    width: 30%;
+    height: 20px;
+    border-style: none;
+}
+
+.section-4 textarea{
+    background-color: transparent;
+    margin: 30px;
+   
+}
+
+.section-4 hr{
+    width: 30%;
+}
+
+.section-4 button{
+    text-align: left;
+    background-color: #fff;
+    color: #1E1E1E;
+}
+
+
+
+/*footer starts*/
+
+.footer{
+    background-color: black;
+    color: gray;
+    padding: 50px 0;
+}
+
+.footer a{
+    color: gray;
+}
+
+.footer .fa{
+    font-size: 30px;
+    padding: 10px;
+    color:goldenrod;
+}
+
+.footer p{
+    font-size: 3vh;
+    color:rgb(5, 140, 203);
+    margin-top: 20px;
+}
+
+
