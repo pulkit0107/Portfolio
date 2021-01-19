@@ -1,6 +1,7 @@
 
 html{
-    font-size: 10px;
+    font-size: 15px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,136 +23,112 @@ body{
 .fix-width{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
-
-
-
-
-
-
-
-/*work starts*/
-.work{
-    width: 100%;
+/*Nav start*/
+nav{
+    background-color:#fffaeb ;
+    position: fixed;
+    padding: 1rem 0;
+    z-index: 999;
 }
 
-.work h1{
-    text-align: center;
-    font-size: 5em;
-    margin: 0;
-}
-
-.work-link{
-    width: 50%;
-    float: left;
-}
-
-.work-link a{
-    margin-left: 6em;
-}
-
-
-
-
-
-/*Skills starts*/
-
-.skill{
-    width: 100%;
-    background-color: #fceec5;
-    padding: 4em 0;
-}
-
-.skill-header h1{
-    text-align: center;
-    font-size: 5em;
-    margin: 0;
-}
-
-.my-hr{
-    width: 10%;
-    background-color: goldenrod;
-}
-
-.skilltype h1{
-    font-size: 4em;
-}
-
-.skilltype h2{
-    font-size: 2em;
-}
-
-.skilltype progress{
-    width: 100%;
-    height: 2em;
-}
-
-
-/*form fill section*/
-
-.section-4{
-    text-align: center;
-    padding: 30px;
-    color: white;
-    background-image: url(../img/pic.jpg);
-}
-
-.section-4 h1{
-    color: #fff;
-}
-
-.section-4 input{
-    background-color:transparent;
-    width: 30%;
-    height: 20px;
-    border-style: none;
-}
-
-.section-4 textarea{
-    background-color: transparent;
-    margin: 30px;
-   
-}
-
-.section-4 hr{
-    width: 30%;
-}
-
-.section-4 button{
-    text-align: left;
-    background-color: #fff;
-    color: #1E1E1E;
-}
-
-
-
-/*footer starts*/
-
-.footer{
-    padding: 5em 0;
-    background-color: black;
+nav .nav-center{
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
-.footer a{
-    text-decoration: none;
-    color: goldenrod;
-    font-size: 3em;
-    margin-left: 1em;
-    transition: 0.5s ease-in-out;
+nav .nav-center .logo{
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer a:hover{
-    color: white;
-}
-
-.footer-copyright{
-    margin-top: 1em;
-} 
-
-.footer-copyright p{
-    color: teal;
-    font-size: 2em;
+nav .nav-center .logo h1{
+    font-size: 2.5rem;
     font-weight: bolder;
+    letter-spacing: .1rem;
+}
+
+nav .nav-center .nav-link ul{
+    display: flex;
+}
+
+nav .nav-center .nav-link ul li{
+    list-style: none;
+    margin-left: 2rem;
+}
+
+nav .nav-center .nav-link ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+nav .nav-center .nav-link ul li a:hover{
+    color: lightsalmon;
+    transition: 0.4s ease-in-out;
+}
+
+.intro{
+    background-color: #fffaeb;
+    padding: 5rem 0;
+}
+
+.intro .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro .flex .intro-left{
+    width: 48%;
+    padding: 7rem;
+}
+
+.intro .flex .intro-left h1{
+    font-size: 4rem;
+    color: #102a42;
+    word-spacing: .3rem;
+    font-weight: bolder;
+}
+
+.intro .flex .intro-left p{
+    color:#617d98 ;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    margin-top: .7rem 0;
+}
+
+.intro-left span{
+    font-size: 2.5rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.intro .intro-right{
+    width: 48%;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.intro .intro-right::before{
+    content: "";
+    position: absolute;
+    top: 4.5rem;
+    left: 3rem;
+    width: 70%;
+    height: 90%;
+    border: 0.3rem solid #e9b949;
+    z-index: -1;
+    border-radius: 0.8rem;
+}
+
+.intro .intro-right img{
+    width: 70%;
+    border-radius: 1rem;
 }
