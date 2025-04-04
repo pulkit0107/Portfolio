@@ -1,0 +1,345 @@
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.fix-width{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*Nav start*/
+nav{
+    background-color:#fffaeb ;
+    position: fixed;
+    padding: 1rem 0;
+    z-index: 999;
+}
+
+nav .nav-center{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav .nav-center .logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-center .logo h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+}
+
+nav .nav-center .nav-link ul{
+    display: flex;
+}
+
+nav .nav-center .nav-link ul li{
+    list-style: none;
+    margin-left: 2rem;
+}
+
+nav .nav-center .nav-link ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+nav .nav-center .nav-link ul li a:hover{
+    color: lightsalmon;
+    transition: 0.4s ease-in-out;
+}
+
+.intro{
+    background-color: #fffaeb;
+    padding: 8.5rem 0;
+}
+
+.intro .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.intro .intro-left .border {
+    width: 7rem;
+    background-color: #e9b949;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.intro .flex .intro-left{
+    width: 48%;
+    padding: 7rem;
+}
+
+.intro .flex .intro-left h1{
+    font-size: 4rem;
+    color: #102a42;
+    word-spacing: .3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.intro .flex .intro-left p{
+    color:#617d98 ;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    margin-top: .7rem 0;
+}
+
+.intro-left span{
+    font-size: 2.5rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.intro .intro-right{
+    width: 48%;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.intro .intro-right::before{
+    content: "";
+    position: absolute;
+    top: 4.5rem;
+    left: 3rem;
+    width: 70%;
+    height: 90%;
+    border: 0.3rem solid #e9b949;
+    z-index: -1;
+    border-radius: 0.8rem;
+}
+
+.intro .intro-right img{
+    width: 70%;
+    border-radius: 1rem;
+}
+
+/*About starts*/
+.about{
+    padding: 5rem 0;
+}
+
+.about .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left{
+    width: 48%;
+    position: relative;
+    margin-left: 1rem;
+}
+
+
+.about .about-left::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    width: 65%;
+    height: 97%;
+    border: 0.3rem solid #e9b949;
+    z-index: -1;
+    border-radius: 0.8rem;
+  }
+  
+.about .flex .about-left img {
+    width: 70%;
+    padding-left: 2rem;
+    border-radius: 0.8rem;
+}
+
+
+.about .flex .about-right {
+    width: 48%;
+    padding-top: 4rem;
+}
+
+.about .flex .about-right h1 {
+    font-size: 3rem;
+}
+
+
+.about .flex .about-right .border {
+    width: 5rem;
+    background-color: #e9b949;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.about .flex .about-right p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #617d98;
+    line-height: 1.7rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    margin-bottom: 4rem;
+}
+
+.about .flex .about-right a {
+    padding: 0.6rem 1.5rem;
+    background-color: #e9b949;
+    text-decoration: none;
+    color: black;
+    border-radius: 0.6rem;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+  
+.about .flex .about-right a:hover {
+    opacity: 0.8;
+}
+
+/* ===== WORK START =====  */
+.work{
+    padding: 3rem 0;
+}
+  
+.work .work-header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.work .work-header .border {
+    width: 5rem;
+    margin: 0 auto;
+    background-color: #e9b949;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.work .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.work .flex .work-info {
+    width: 48%;
+    position: relative;
+    margin-bottom: 2rem;
+    background: #e2b751;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 3px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  
+.work .flex .work-info a img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+  
+.work .flex .work-info a:hover img {
+    opacity: 0.1;
+}
+  
+.work .flex .work-info a .hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 7.2rem 15.8rem;
+    display: none;
+}
+  
+.work .flex .work-info a:hover .hover {
+    display: block;
+}
+
+/* ===== SKILLS START =====   */
+.skill {
+    padding: 5rem 0;
+    background-color: #fceec5;
+  }
+  
+.skill .skill-header h1 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+  
+.skill .skill-header .border {
+    width: 5rem;
+    margin: 0 auto;
+    background-color: #e9b949;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+  
+.skill .skill-front h2 {
+    color: #513c06;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill .skill-front progress{
+    width: 100%;
+    font-size: 2rem;
+}
+
+/* ===== FOOTER START ====  */
+footer {
+  padding: 3rem 0;
+  background-color: black;
+  text-align: center;
+}
+
+footer .footer-icon a {
+  text-decoration: none;
+  color: #e2b751;
+  font-size: 1.9rem;
+  margin-left: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+footer .footer-icon a:hover {
+  color: #fff;
+}
+
+footer .footer-copyright {
+  margin-top: 2rem;
+}
+
+footer .footer-copyright p {
+  color: #617d98;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
